@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo " Executing something before main build "
+
+/usr/libexec/s2i/assemble
+
+
+echo " Executing something after main build "
