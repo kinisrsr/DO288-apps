@@ -1,0 +1,18 @@
+- apiVersion: image.openshift.io/v1
+  kind: ImageStream
+  metadata:
+    labels:
+      app: quotesapi
+      app.kubernetes.io/component: quotesapi
+      app.kubernetes.io/instance: quotesapi
+    name: quotesapi
+    namespace: kiniraj-quotes-dev
+    resourceVersion: "19949476"
+    selfLink: /apis/image.openshift.io/v1/namespaces/kiniraj-quotes-dev/imagestreams/quotesapi
+    uid: 2ccd1907-278c-46c6-aeaa-1a5bd69cc989
+  spec:
+    lookupPolicy:
+      local: false
+  status:
+    dockerImageRepository: image-registry.openshift-image-registry.svc:5000/kiniraj-quotes-dev/quotesapi
+    publicDockerImageRepository: default-route-openshift-image-registry.apps.na45.prod.nextcle.com/kiniraj-quotes-dev/quotesapi
