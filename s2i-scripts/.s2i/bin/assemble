@@ -11,7 +11,12 @@ config_s2i
 ######## CUSTOMIZATION STARTS HERE ############
 
 echo "---> Installing application source"
+echo " pwd" 
+pwd
+ls -l
 cp -Rf /tmp/src/*.html ./
+ls -l
+
 
 DATE=`date "+%b %d, %Y @ %H:%M %p"`
 
